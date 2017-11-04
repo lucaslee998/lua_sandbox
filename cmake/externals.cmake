@@ -92,8 +92,8 @@ add_dependencies(lua_cjson ${LUA_PROJECT})
 
 externalproject_add(
     lua_struct
-    GIT_REPOSITORY https://github.com/trink/struct.git
-    GIT_TAG b7e9b87d1ee36a5e22c6749be0959b45858beaad
+    GIT_REPOSITORY https://github.com/rustyrobot/lua_sandbox_struct.git
+    GIT_TAG 819009ea5a6cd0a304162568fffcfbf938b4a54e
     UPDATE_COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/FindLua.cmake <SOURCE_DIR>/cmake
     CMAKE_ARGS ${SANDBOX_CMAKE_ARGS}
     INSTALL_ARGS ${INST_ARGS}
@@ -114,7 +114,7 @@ add_dependencies(lua_socket ${LUA_PROJECT})
 
 externalproject_add(
     lua_bloom_filter
-    GIT_REPOSITORY https://github.com/mozilla-services/lua_bloom_filter.git
+    GIT_REPOSITORY https://github.com/rustyrobot/lua_bloom_filter.git
     GIT_TAG 4151be752c3dd2f74d1c3487d8352ca54055eb81
     CMAKE_ARGS ${SANDBOX_CMAKE_ARGS}
     INSTALL_ARGS ${INST_ARGS}
@@ -123,8 +123,8 @@ add_dependencies(lua_bloom_filter luasandbox)
 
 externalproject_add(
     lua_circular_buffer
-    GIT_REPOSITORY https://github.com/mozilla-services/lua_circular_buffer.git
-    GIT_TAG bb6dd9f88f148813315b5a660b7e2ba47f958b31
+    GIT_REPOSITORY https://github.com/rustyrobot/lua_circular_buffer.git
+    GIT_TAG 040029b35fdd01cd7551fcc7edc7d8fc504f95eb
     CMAKE_ARGS ${SANDBOX_CMAKE_ARGS}
     INSTALL_ARGS ${INST_ARGS}
 )
@@ -132,8 +132,8 @@ add_dependencies(lua_circular_buffer luasandbox)
 
 externalproject_add(
     lua_hyperloglog
-    GIT_REPOSITORY https://github.com/mozilla-services/lua_hyperloglog.git
-    GIT_TAG 92f8a59e9e6f4ee381482f449b6cee78bb55460a
+    GIT_REPOSITORY https://github.com/rustyrobot/lua_hyperloglog.git
+    GIT_TAG 13515754675c42c2c4d6e395276629eccd3f44f3
     CMAKE_ARGS ${SANDBOX_CMAKE_ARGS}
     INSTALL_ARGS ${INST_ARGS}
 )
@@ -141,8 +141,8 @@ add_dependencies(lua_hyperloglog luasandbox)
 
 externalproject_add(
     lua_cuckoo_filter
-    GIT_REPOSITORY https://github.com/mozilla-services/lua_cuckoo_filter.git
-    GIT_TAG 8343207aa7656d0324d23f79a5732fcb0bdb5917
+    GIT_REPOSITORY https://github.com/rustyrobot/lua_cuckoo_filter.git
+    GIT_TAG f93f7a0d6d072643962984eec0dad1a3a32d1811
     CMAKE_ARGS ${SANDBOX_CMAKE_ARGS}
     INSTALL_ARGS ${INST_ARGS}
 )
